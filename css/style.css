@@ -9,6 +9,7 @@
 }
 
 body {
+    background-color: #000;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -100,4 +101,109 @@ header .nav-primary li a {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+main {
+    background-color: #111;
+    color: white;
+}
+
+main .about {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+
+}
+.about-titulo {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #fff;
+}
+.about-titulo h1 {
+    font-size: 2.5rem;
+    color: #483D8B;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
+}
+.about-titulo p {
+    color: #707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.about-titulo div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.about-titulo span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #483D8B;
+}
+.about img {
+    cursor: pointer;
+    grid-row: 2;
+    max-width: 100%;
+    border-radius: 4px;
+    filter: blur(0);
+}
+.about img:hover {
+    transition: .5s ease-in;
+    filter: blur(2px);
+}
+.about-content {
+    grid-column: 2/-1;
+    display: grid;
+    color: #707070;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+}
+.about-text {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-text h1 {
+    font-size: 30px;
+    color: #fff;
+    grid-column: 1/-1;
+}
+.about-text h1::after {
+    background-color: #483D8B;
+    height: 6px;
+    width: 60px;
+    margin: 20px 0;
+    content: '';
+    display: block;
+    border-radius: 5px;
+}
+.about-text p {
+    font: 1.3rem;
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+.about-info {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+    align-items: center;
+}
+.about-info i {
+    color: #483D8B;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+.about-info p {
+    font-size: .9rem;
 }
