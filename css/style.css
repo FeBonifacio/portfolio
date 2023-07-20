@@ -150,7 +150,7 @@ main .about {
 .about img {
     cursor: pointer;
     grid-row: 2;
-    max-width: 100%;
+    max-width: 50%;
     border-radius: 4px;
     filter: blur(0);
 }
@@ -206,4 +206,29 @@ main .about {
 }
 .about-info p {
     font-size: .9rem;
+}
+
+@media (max-width: 768px) {
+    .section-div img {
+        display: none;
+    }
+    /* .section-div {
+        background-image: url(../img/eu.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
+    header .nav-primary {
+        display: none;
+    }
+    header i {
+        color: #483D8B;
+        font-size: 3rem;
+    }
+    .about img {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+    .about-content {
+        grid-column: 1/-1;
+    }
 }
