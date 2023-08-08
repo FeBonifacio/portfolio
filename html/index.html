@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    jQuery(document).ready(function($) { 
+        $(".scroll").click(function(event){        
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 200);
+        });
+    })
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +22,11 @@
         <h1>Programmer</h1>
         <nav>
             <ul class="nav-primary">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">About</a></li>
+                <li><a href="#resumo">Resume</a></li>
+                <li><a href="#projetos">Portfolio</a></li>
+                <li><a href="#projetos"></a></li>
             </ul>
             <i class="fa-solid fa-bars"></i>
         </nav>
@@ -29,7 +35,11 @@
         <div>
             <h2>Hello ! I'm</h2>
             <h2 class="typing">Full Stack Developer !</h2>
-            <p>Apresentação sobre mim Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit., </p>
+            <p>Durante meus estudos, tenho adquirido um sólido conhecimento em lógica de 
+                programação, o que me permite criar soluções eficientes e escaláveis. Além disso,
+                tenho experiência no desenvolvimento de sistemas mobile e web, utilizando tecnologias 
+                como HTML, CSS, JavaScript entro outros.
+            </p>
             <a href="#">Download CV</a>
         </div>
         <div class="box">
@@ -38,12 +48,10 @@
     </section>
     <main>
         <article aria-label="sobre mim" class="about">
-            <div class="about-titulo">
+            <div id="sobre" class="about-titulo">
             <h1>About Me</h1>
             <p>Professional Profile - There is All About Me</p>
                 <div aria-label="buttons">
-                    <span></span>
-                    <span></span>
                     <span></span>
                 </div>
             </div>
@@ -52,9 +60,7 @@
                 <div class="about-text">
                     <h1>Nice to meet you, Im - Fernando Bonifacio</h1>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic rem, voluptas ex a sint.
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos inventore doloribus voluptatem odit laborum debitis!
+                        
                     </p>
                 </div>
                 <div class="about-info">
@@ -69,5 +75,157 @@
             </div>
         </article>
     </main>
+    <div id="resumo" class="my-resume">
+        <div class="about-titulo">
+            <h1>My Resume</h1>
+            <p></p>
+            <div aria-label="Seção de botoes">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+        </div>
+
+        <div class="resume-generica">
+            <h2 class="experience"><i class="fa-solid fa-handshake"></i>EXPERIENCE</h2>
+            <div class="experience-content">
+                <div>
+                    <span>2021 - Atualmente</span>
+                    <h3>Desenvolvimento Full Stack - freelancer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+
+            <h2 class="education"><i class="fa-solid fa-book"></i>EDUCATION</h2>
+            <div class="education-content">
+                <div>
+                    <span>2021 - 2023</span>
+                    <h3>Tecnologo - Analise e desenvolvimento de sistema</h3>
+                </div>
+                <div>
+                    <span>2022 - 2023</span>
+                    <h3>Desenvolvedor Full Stack - OneBitCode</h3>
+                </div>
+                <ul>
+                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>  
+                </ul>
+            </div>
+        </div>
+        <div class="cursos">
+            <div class="my-skill">
+                <h2><i class="fa-sharp fa-regular fa-star"></i>MY SKILL</h2>
+                    <div class="skill-content">
+                        <h3>HTML</h3>
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill-content">
+                        <h3>CSS</h3>
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill-content">
+                        <h3>JAVASCRIPT</h3>
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill-content">
+                        <h3>TYPESCRIPT</h3>
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill-content">
+                        <h3>NODE.JS</h3>
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill-content">
+                        <h3>NEXT.JS</h3>
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill-content">
+                        <h3>POSTGRESQL</h3>
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill-content">
+                        <h3>MONGODB</h3>
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <section class="projects">
+        <div id="projetos" class="about-titulo">
+            <h1>My Projects</h1>
+            <div aria-label="botao para ficar bonito :)">
+                <span></span>
+            </div>
+        </div>
+        <div class="projects-models">
+            <ul aria-label="botoes de escolha entre web e mobile">
+                <li class="all">ALL</li>
+                <li class="web">WEB</li>
+                <li class="mobile">MOBILE</li>
+            </ul>
+        </div>
+        <div class="projects-storage">
+            <ul aria-label="navecacao de projetos">
+                <li id="web"><img src="../img/projeto1.jpg" alt="projeto porfifolio"></li>
+                <li id="web"><img src="../img/projeto1.jpg" alt="projeto porfifolio"></li>
+                <li id="web"><img src="../img/projeto1.jpg" alt="projeto porfifolio"></li>
+                <li id="web"><img src="../img/projeto1.jpg" alt="projeto porfifolio"></li>
+                <li id="mobile"><img src="../img/projeto2.jpg" alt="projeto porfifolio"></li>
+                <li id="mobile"><img src="../img/projeto2.jpg" alt="projeto porfifolio"></li>
+                <li id="mobile"><img src="../img/projeto2.jpg" alt="projeto porfifolio"></li>
+                <li id="mobile"><img src="../img/projeto2.jpg" alt="projeto porfifolio"></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <nav aria-label="navegação de links sociais">
+            <ul class="footer_sociais">
+                <li><a href="https://www.linkedin.com/in/fernando-bonifacio-97538715a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><i class="fa-brands fa-instagram"><a href="#"></a></i></li>
+                <li><a href="https://github.com/FeBonifacio/" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+            </ul>
+        </nav>
+        <p class="footer_comercial">Todos os direitos reservados &copy; - 2023</p>
+    </footer>
 </body>
 </html>

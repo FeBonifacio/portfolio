@@ -77,6 +77,7 @@ header .nav-primary li a:hover::after {
 .section-div div p {
     font-family: 'Poppins';
     font-weight: 200;
+    font-size: 20px;
     color: #f7f7f7;
 }
 .section-div div a {
@@ -146,7 +147,7 @@ main .about {
 }
 .about-titulo p {
     color: #707070;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     position: relative;
 }
@@ -263,5 +264,272 @@ main .about {
     }
     .about-content {
         grid-column: 1/-1;
+    }
+}
+.my-resume {
+    color: #fff;
+}
+
+.resume-generica {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+    background-color: #222;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.resume-generica h2 {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    background-color: #483D8B;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.resume-generica h2 i {
+    margin-right: 10px;
+}
+.experience {
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.education {
+    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 1;
+}
+.experience-content {
+    color: #fff;
+}
+.education-content ul{
+    color: #483D8B;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+}
+.resume-generica .experience-content div span {
+    color: #483D8B;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+.resume-generica .education-content div {
+    display: none;
+    animation: ladoSecao .5 ease-in-out forwards;
+}
+.resume-generica .education-content div.ativo {
+    display: block;
+}
+.resume-generica .education-content ul li.ativo {
+    color: #3E3D3D;
+}
+.resume-generica .education-content div span {
+    color: #483D8B;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+.resume-generica .experience-content div h3 {
+    font-family: 'Poppins';
+    margin: 10px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+.resume-generica .education-content div h3 {
+    font-family: 'Poppins';
+    margin: 10px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.resume-generica .experience-content div p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+.resume-generica .education-content div p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+
+
+/* CURSOS E SKILLS */
+
+.cursos {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: start;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+}
+.my-skill {
+    display: grid;
+}
+.my-skill h2 {
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: #483D8B;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    margin-bottom: 30px;
+    justify-self: start;
+}
+.my-skill h2 i {
+    padding-right: 10px;
+}
+.skill-content {
+    font-size: 1.5rem;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 10px;
+}
+.skill-content h3 {
+    font-size: 1.5rem;
+}
+.skill-content ul {
+    display: flex;
+}
+@media(max-width: 1089px) {
+    .resume-generica .experience-content,.education-content {
+        justify-self: center;
+        margin: 10px 0;
+        
+    }
+    .resume-generica .education {
+        grid-column: 1/1;
+        grid-row: 2;
+        justify-self: center;
+        }
+        .resume-generica .experience {
+            grid-column: 1/1;
+            grid-row: 1;
+            justify-self: center;
+    }
+    .cursos {
+        grid-template-columns: 1fr;
+    }
+    .cursos .my-skill {
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        grid-column: 1/-1;
+    }
+}
+.projects {
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    background-color: #151515;
+}
+.projects ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.projects-models ul li{
+    cursor: pointer;
+    font-family: 'Poppins';
+    background-color: #222;
+    border: 1px solid #333;
+    padding: 6px 20px;
+    color: #707070;
+}
+.projects-models ul li.ativo {
+    background-color: #483D8B;
+    color: #151515;
+    font-weight: bold;
+}
+.projects-storage ul {
+    display: grid;
+    margin-top: 60px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.projects-storage ul li {
+    display: none;
+    max-width: 100%;
+    height: 100%;
+}
+.projects-storage ul li.ativo {
+    display: block;
+}
+.projects-storage ul li img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.projects a {
+    background-color: #222;
+    text-decoration: none;
+    justify-self: center;
+    padding: 20px 40px;
+    border: 1px solid #333;
+    color: #707070;
+}
+
+footer {
+    background-color: #000000;
+    padding: 30px;
+}
+
+.footer_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+.footer_sociais li {
+    border-radius: 50%;
+    background-color: #483D8B;
+    border: 1px solid #333;
+}
+
+.footer_sociais li i {
+    padding: 30px;
+    font-size: 1.5rem;
+    color: #363636;
+}
+
+.footer_sociais li:hover {
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background-color: #3e3d3d;
+}
+
+.footer_sociais::before {
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    height: 5px;
+    width: 200px;
+    background-color: #222;
+}
+
+footer .footer_comercial {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 90px 0;
+    font-family: 'Poppins';
+}
+@media (max-width: 500px) {
+    header h1 {
+        display: flex;
+        margin: 20px;
+        align-self: flex-end;
     }
 }
