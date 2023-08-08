@@ -118,6 +118,9 @@ header .nav-primary li a:hover::after {
         transform: translate3d(0, 0, 0);
     }
 }
+div i {
+    color: #483D8B;
+}
 
 main {
     background-color: #111;
